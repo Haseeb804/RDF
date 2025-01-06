@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3DADE439-5D87-45D9-92F2-C5216852F37B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RDF</RootNamespace>
+    <AssemblyName>RDF</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addcashier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addcashier.Designer.cs">
+      <DependentUpon>addcashier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminaddproduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminaddproduct.Designer.cs">
+      <DependentUpon>adminaddproduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminaddproductdata.cs" />
+    <Compile Include="adminAddUsers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminAddUsers.Designer.cs">
+      <DependentUpon>adminAddUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminAddusersdata.cs" />
+    <Compile Include="admindashboard1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="admindashboard1.Designer.cs">
+      <DependentUpon>admindashboard1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminMainForm.Designer.cs">
+      <DependentUpon>adminMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminViewOrders.cs" />
+    <Compile Include="adminViewProducts.cs" />
+    <Compile Include="adminViewUsers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminViewUsers.Designer.cs">
+      <DependentUpon>adminViewUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="allOrders.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="allOrders.Designer.cs">
+      <DependentUpon>allOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="allProducts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="allProducts.Designer.cs">
+      <DependentUpon>allProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="allUsers.cs" />
+    <Compile Include="cashierCustomerForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="cashierCustomerForm.Designer.cs">
+      <DependentUpon>cashierCustomerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cashierMainDasdboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="cashierMainDasdboard.Designer.cs">
+      <DependentUpon>cashierMainDasdboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cashierOrderData.cs" />
+    <Compile Include="cashierorderform.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="cashierorderform.Designer.cs">
+      <DependentUpon>cashierorderform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cashierOrderFormProData.cs" />
+    <Compile Include="Customers.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProgressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressForm.Designer.cs">
+      <DependentUpon>ProgressForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addcashier.resx">
+      <DependentUpon>addcashier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminaddproduct.resx">
+      <DependentUpon>adminaddproduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminAddUsers.resx">
+      <DependentUpon>adminAddUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admindashboard1.resx">
+      <DependentUpon>admindashboard1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminMainForm.resx">
+      <DependentUpon>adminMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminViewUsers.resx">
+      <DependentUpon>adminViewUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allOrders.resx">
+      <DependentUpon>allOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allProducts.resx">
+      <DependentUpon>allProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cashierCustomerForm.resx">
+      <DependentUpon>cashierCustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cashierMainDasdboard.resx">
+      <DependentUpon>cashierMainDasdboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cashierorderform.resx">
+      <DependentUpon>cashierorderform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressForm.resx">
+      <DependentUpon>ProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
